@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Open Sans', serif;
+  background: url('img/bg2.jpg') center center no-repeat;
+  background-size: cover;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.title-container {
+  height: 90vh;
+  background: url('img//bg.jpg') center center no-repeat;
+  background-size: cover;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  color: black;
+  padding: 0 20px;
+}
+
+.title-container__title {
+  font-size: 50px;
+  letter-spacing: 2px;
+  line-height: 1.3;
+  font-family: 'Roboto Slab', serif;
+  width: 400px;
+}
+
+.title-container__subtitle {
+  font-style: italic;
+  font-weight: 100;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  font-family: 'Merriweather', serif;
+}
+
+.form-container {
+  background: url('img/images.jfif') center center no-repeat;
+  background-size: cover;
+  height: 90vh;
+  padding-top: 100px;
+  padding-left: 50px;
+}
+
+input[type='text'] {
+  background-color: transparent;
+  border: 0;
+  border-bottom: solid 1px white;
+  width: 30%;
+  padding-bottom: 4px;
   color: white;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  font-size: 20px;
+  outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  border: 0;
+  padding: 5px 15px;
+  margin: 0 2px;
+  border-radius: 2px;
+  letter-spacing: 1px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather__info {
+  width: 50%;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.weather__key {
+  color: red;
+  border-bottom: solid 2px rgba(255, 255, 255, 0.06);
+  padding: 20px 0 20px 0;
+  font-weight: 400;
+}
+
+.weather__key:last-child {
+  border: 0;
+}
+
+.weather__value {
+  color: black;
+  font-weight: 200;
+}
+
+.weather__error {
+  color: red;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 200;
 }
