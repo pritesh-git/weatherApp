@@ -11,3 +11,115 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body {
+  font-family: 'Open Sans', serif;
+  background: url('img/bg.jpg') center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.title-container {
+  height: 60vh;
+  background: url('img/title.jpg') center center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  padding: 0 20px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.title-container__title {
+  font-size: 50px;
+  letter-spacing: 2px;
+  line-height: 1.3;
+  font-family: 'Roboto Slab', serif;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: auto 10px;
+  border-radius: 10px;
+}
+
+.title-container__subtitle {
+  font-style: italic;
+  font-weight: 100;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  font-family: 'Merriweather', serif;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+.form-container {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 60vh;
+  padding-top: 100px;
+  padding-left: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+input[type='text'] {
+  background-color: transparent;
+  border: 0;
+  border-bottom: solid 1px white;
+  width: 30%;
+  padding-bottom: 4px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  font-size: 20px;
+  outline: none;
+}
+
+button {
+  border: 0;
+  padding: 5px 15px;
+  margin: 0 2px;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.weather__info {
+  width: 50%;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.weather__key {
+  color: red;
+  border-bottom: solid 2px rgba(255, 255, 255, 0.06);
+  padding: 20px 0 20px 0;
+  font-weight: 400;
+}
+
+.weather__key:last-child {
+  border: 0;
+}
+
+.weather__value {
+  color: black;
+  font-weight: 200;
+}
+
+.weather__error {
+  color: red;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 200;
+}
